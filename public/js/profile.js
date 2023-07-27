@@ -14,7 +14,7 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/blog/:id');
+        document.location.replace('/');
       } else {
         alert('Failed to create blog');
       }
@@ -41,6 +41,4 @@ const newFormHandler = async (event) => {
     .querySelector('.new-blog-form')
     .addEventListener('submit', newFormHandler);
   
-  document
-    .querySelector('.blog-list')
-    .addEventListener('click', delButtonHandler);
+  document.querySelector('.blog-list')?.addEventListener('click', delButtonHandler);
