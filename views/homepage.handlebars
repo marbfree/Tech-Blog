@@ -1,9 +1,9 @@
 <!-- Loop over each object in the blog array -->
 {{#each blogs as |blog| }}
-<div class="column mb-4 blog p-2 mt-5">
+<div class="column mb-4 blog card bg-warning p-2 mt-5">
   <div class="col-md-12">
     <h2>
-      <a class="d-flex justify-content-center text-success" href="/blog/{{blog.id}}">{{blog.title}}</a>
+      <a class="d-flex justify-content-center text-dark" href="/blog/{{blog.id}}">{{blog.title}}</a>
     </h2>
     <p class="d-flex justify-content-center">Created by {{user.name}} on {{format_date blog.date_created}}</p>
   </div>

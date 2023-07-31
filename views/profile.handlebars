@@ -1,23 +1,23 @@
 <div class="col-md-12 d-flex justify-content-center">
-  <div class="col-auto mt-5">
+  <div class="col-auto mt-3">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
-<div class="row mt-4 col-md-6 d-flex justify-content-center card bg-warning">
-  <div class="col-md-6">
+<div class="row mt-5">
+  <div class="col-md-6 text-center">
     <h3>Create a New Blog:</h3>
 
-    <form class="form new-blog-form">
+    <form class="form new-blog-form col-md-12 card bg-warning">
       <div class="form-group">
-        <label for="blog-name">blog title:</label>
-        <input class="form-input" type="text" id="blog-name" name="blog-name" />
+        <label for="blog-name">Blog Title:</label>
+        <input class="form-control" type="text" id="blog-name" name="blog-name" />
       </div>
       <div class="form-group">
-        <label for="blog-content">content:</label>
-        <textarea class="form-input" id="blog-content" name="blog-content"></textarea>
+        <label for="blog-content">Content:</label>
+        <textarea class="form-control" id="blog-content" name="blog-content"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group m-2">
         <button type="submit" class="btn btn-success">Create</button>
       </div>
     </form>
